@@ -1,0 +1,210 @@
+header {
+  height: 26px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  line-height: 26px;
+}
+header a {
+  color: #999;
+}
+header a:hover {
+  color: red;
+  text-decoration: underline;
+}
+header #contenier {
+  width: 1190px;
+  height: 26px;
+  margin: 0 auto;
+}
+header #contenier .back_home {
+  float: left;
+  width: 63px;
+  margin-right: 20px;
+}
+header #contenier .back_home .iconfont {
+  font-size: 12px;
+  color: #F83C3D;
+  float: left;
+}
+header #contenier #login_info1 {
+  width: 260px;
+  height: 26px;
+  float: left;
+}
+header #contenier #login_info1 em {
+  float: left;
+  color: #999;
+  width: 84px;
+  height: 16px;
+}
+header #contenier #login_info1 .login {
+  float: left;
+  color: #999;
+  width: 40px;
+  padding-left: 20px;
+}
+header #contenier #login_info1 .reg {
+  width: 68px;
+  padding-left: 10px;
+}
+header #contenier #quick_menu {
+  float: right;
+}
+header #contenier #quick_menu .iconfont {
+  float: left;
+  font-size: 12px;
+  color: #F83C3D;
+}
+header #contenier #quick_menu li {
+  float: left;
+  margin-right: 20px;
+}
+header #contenier #quick_menu .menu_item-mytaobao {
+  position: relative;
+}
+header #contenier #quick_menu .menu_item-mytaobao :hover {
+  background-color: #fff;
+}
+header #contenier #quick_menu .menu_item-mytaobao :hover .menu_bd_mytaobao {
+  display: block;
+}
+header #contenier #quick_menu .menu_item-mytaobao .menu1 {
+  width: 50px;
+  padding: 0 10px;
+  height: 26px;
+  position: relative;
+}
+header #contenier #quick_menu .menu_item-mytaobao .menu1:hover .iconfont {
+  transform: rotate(180deg);
+}
+header #contenier #quick_menu .menu_item-mytaobao .menu1 .iconfont {
+  color: #333;
+  float: left;
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  transition: 0.3s;
+}
+header #contenier #quick_menu .menu_item-mytaobao .menu_bd_mytaobao {
+  width: 85px;
+  height: 50px;
+  border: 1px solid #999;
+  position: absolute;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  text-align: center;
+}
+header #contenier #quick_menu .menu_item-collect {
+  position: relative;
+  width: 48px;
+}
+header #contenier #quick_menu .menu_item-collect :hover {
+  background-color: #fff;
+}
+header #contenier #quick_menu .menu_item-collect :hover .menu_bd_collect {
+  display: block;
+}
+header #contenier #quick_menu .menu_item-collect .menu2 {
+  width: 50px;
+  padding: 0 10px;
+  height: 26px;
+}
+header #contenier #quick_menu .menu_item-collect .menu2:hover .iconfont {
+  transform: rotate(180deg);
+}
+header #contenier #quick_menu .menu_item-collect .menu2 .iconfont {
+  color: #333;
+  position: absolute;
+  right: -10px;
+  top: 1px;
+  transition: 0.3s;
+}
+header #contenier #quick_menu .menu_item-collect .menu_bd_collect {
+  width: 80px;
+  height: 55px;
+  border: 1px solid #999;
+  position: absolute;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  text-align: center;
+}
+header #contenier #quick_menu .menu_item-collect .menu_bd_collect a {
+  float: left;
+}
+header #contenier #quick_menu .menu_item-support {
+  position: relative;
+}
+header #contenier #quick_menu .menu_item-support .menu_item_support {
+  width: 65px;
+}
+header #contenier #quick_menu .menu_item-support .menu_item_support:hover .iconfont {
+  transform: rotate(180deg);
+}
+header #contenier #quick_menu .menu_item-support .menu_item_support .iconfont {
+  color: #333;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  transition: 0.3s;
+}
+header #contenier #quick_menu .menu_item-support :hover {
+  background-color: #fff;
+}
+header #contenier #quick_menu .menu_item-support :hover .menu_bd_support {
+  display: block;
+}
+header #contenier #quick_menu .menu_item-support .menu_bd_support {
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  position: relative;
+  display: none;
+}
+header #contenier #quick_menu .menu_item-support .menu_bd_support ul {
+  width: 120px;
+  position: fixed;
+  border: 1px solid #999;
+  color: #666;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+}
+header #contenier #quick_menu .menu_item-support .menu_bd_support ul li {
+  width: 100%;
+  border-bottom: 1px dashed #666;
+}
+header #contenier #quick_menu .menu_item-support .menu_bd_support ul h3 {
+  font-size: 14px;
+}
+header #contenier #quick_menu .menu_item-support .menu_bd_support ul a {
+  display: inline-block;
+  width: 48px;
+}
+header #contenier #quick_menu .menu_item-support .menu_bd_support ul .lobby {
+  display: inline-block;
+  width: 72px;
+}
+header #contenier #quick_menu .menu_ietm-phone {
+  position: relative;
+}
+header #contenier #quick_menu .menu_ietm-phone :hover {
+  color: red;
+  text-decoration: underline;
+}
+header #contenier #quick_menu .menu_ietm-phone :hover .menu_mobile {
+  display: block;
+}
+header #contenier #quick_menu .menu_ietm-phone .menu3 {
+  width: 48px;
+}
+header #contenier #quick_menu .menu_ietm-phone .menu_mobile {
+  width: 118px;
+  height: 80px;
+  position: absolute;
+  left: -58px;
+  top: 26px;
+  display: none;
+  z-index: 99;
+}

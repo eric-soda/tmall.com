@@ -1,0 +1,53 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 去掉b strong加粗 */
+b,
+strong {
+  font-weight: normal;
+}
+/* 去掉i em倾斜 */
+i,
+em {
+  font-style: normal;
+}
+/* 去掉li的项目符号 */
+li {
+  list-style: none;
+}
+/* 去掉a u s del的修饰线 */
+a,
+u,
+s,
+del {
+  text-decoration: none;
+}
+/* 去掉图片下方3-5px间隙 */
+img {
+  vertical-align: bottom;
+}
+/* 清除浮动 */
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+/* 版心 */
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}

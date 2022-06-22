@@ -1,0 +1,61 @@
+#serch_input {
+  position: relative;
+  width: 1190px;
+  height: 111px;
+  display: flex;
+}
+#serch_input #serch_left {
+  width: 360px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: -360px;
+}
+#serch_input #serch_right {
+  width: 360px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  right: -360px;
+}
+#serch_input .logo-box {
+  margin-top: 28px;
+  margin-left: 73px;
+  float: left;
+}
+#serch_input .logo-box img {
+  width: 87px;
+  height: 53px;
+}
+#serch_input .serch-box {
+  width: 632px;
+  height: 42px;
+  border-radius: 20px;
+  border: 1px solid #fe0137;
+  margin: 36px 0 0 86px;
+  float: left;
+  position: relative;
+}
+#serch_input .serch-box .serch-input {
+  width: 540px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #000;
+  height: 42px;
+  line-height: 42px;
+  margin-left: 16px;
+}
+#serch_input .serch-box .serch-button {
+  width: 90px;
+  height: 42px;
+  background-color: #fe0137;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #fff;
+}

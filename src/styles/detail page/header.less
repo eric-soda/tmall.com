@@ -1,0 +1,272 @@
+header {
+  height: 26px;
+  background-color: rgb(242, 242, 242);
+  font-size: 12px;
+  line-height: 26px;
+
+  a {
+    color: #999;
+  }
+
+  a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  #contenier {
+    width: 1190px;
+    height: 26px;
+    margin: 0 auto;
+
+    .back_home {
+      float: left;
+      width: 63px;
+      margin-right: 20px;
+
+      .iconfont {
+        font-size: 12px;
+        color: #F83C3D;
+        float: left;
+      }
+    }
+
+
+
+    #login_info1 {
+      width: 260px;
+      height: 26px;
+      float: left;
+
+      em {
+        float: left;
+        color: #999;
+        width: 84px;
+        height: 16px;
+      }
+
+
+
+      .login {
+        float: left;
+        color: #999;
+        width: 40px;
+        padding-left: 20px
+      }
+
+
+
+      .reg {
+        width: 68px;
+        padding-left: 10px;
+      }
+    }
+
+
+
+    #quick_menu {
+      float: right;
+
+      .iconfont {
+        float: left;
+        font-size: 12px;
+        color: #F83C3D;
+      }
+
+      li {
+        float: left;
+        margin-right: 20px
+      }
+
+      .menu_item-mytaobao {
+        position: relative;
+
+        :hover {
+          background-color: #fff;
+        }
+
+        :hover .menu_bd_mytaobao {
+          display: block;
+        }
+
+        .menu1 {
+          width: 50px;
+          padding: 0 10px;
+          height: 26px;
+          position: relative;
+
+          &:hover .iconfont {
+            transform: rotate(180deg);
+          }
+
+          .iconfont {
+            color: #333;
+            float: left;
+            position: absolute;
+            right: -3px;
+            top: 1px;
+            transition: .3s;
+          }
+        }
+
+        .menu_bd_mytaobao {
+          width: 85px;
+          height: 50px;
+          border: 1px solid #999;
+          position: absolute;
+          left: 0;
+          display: none;
+          background-color: #fff;
+          text-align: center;
+        }
+      }
+
+      .menu_item-collect {
+        position: relative;
+        width: 48px;
+
+        :hover {
+          background-color: #fff;
+        }
+
+        :hover .menu_bd_collect {
+          display: block;
+        }
+
+        .menu2 {
+          width: 50px;
+          padding: 0 10px;
+          height: 26px;
+
+          &:hover .iconfont {
+            transform: rotate(180deg);
+          }
+
+          .iconfont {
+            color: #333;
+            position: absolute;
+            right: -10px;
+            top: 1px;
+            transition: .3s;
+          }
+        }
+
+        .menu_bd_collect {
+          width: 80px;
+          height: 55px;
+          border: 1px solid #999;
+          position: absolute;
+          left: 0;
+          display: none;
+          background-color: #fff;
+          text-align: center;
+
+          a {
+            float: left;
+          }
+        }
+      }
+
+      .menu_item-support {
+        position: relative;
+
+        .menu_item_support {
+          width: 65px;
+
+          &:hover .iconfont {
+            transform: rotate(180deg);
+          }
+
+          .iconfont {
+            color: #333;
+            position: absolute;
+            right: 0;
+            top: 1px;
+            transition: .3s;
+          }
+        }
+
+        :hover {
+          background-color: #fff;
+        }
+
+        :hover .menu_bd_support {
+          display: block;
+        }
+
+        .menu_bd_support {
+          position: absolute;
+          left: 0;
+          font-size: 12px;
+          position: relative;
+          display: none;
+
+          ul {
+            width: 120px;
+
+            position: fixed;
+            border: 1px solid #999;
+            color: #666;
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+
+            li {
+              width: 100%;
+              border-bottom: 1px dashed #666;
+            }
+
+            h3 {
+              font-size: 14px;
+            }
+
+            a {
+              display: inline-block;
+              // text-align: center;
+              width: 48px;
+            }
+
+            .lobby {
+              display: inline-block;
+              width: 72px;
+              // text-align: center;
+
+            }
+          }
+        }
+      }
+
+      .menu_ietm-phone {
+        position: relative;
+
+        :hover {
+          color: red;
+          text-decoration: underline;
+        }
+
+        :hover .menu_mobile {
+          display: block;
+        }
+
+        .menu3 {
+          width: 48px;
+
+        }
+
+        .menu_mobile {
+          width: 118px;
+          height: 80px;
+          position: absolute;
+          left: -58px;
+          top: 26px;
+          display: none;
+          z-index: 99;
+
+        }
+      }
+    }
+  }
+
+
+
+
+}
