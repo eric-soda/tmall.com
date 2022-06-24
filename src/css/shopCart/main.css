@@ -81,7 +81,6 @@
   padding: 25px 0;
 }
 .content_main .wrapper {
-  height: 100%;
   background-color: white;
   border-radius: 24px;
 }
@@ -130,7 +129,6 @@
   margin-right: 100px;
 }
 .content_main .wrapper .main_mid .main_mid_product {
-  height: 170px;
   background-color: #fff;
   padding-bottom: 20px;
   border-bottom: 1px solid #dadada;
@@ -162,7 +160,6 @@
   color: #37bcf0;
 }
 .content_main .wrapper .main_mid .main_mid_product .shop_product {
-  height: 130px;
   box-sizing: border-box;
   margin: 5px 24px 0;
   border: 1px solid #F5F5F5;

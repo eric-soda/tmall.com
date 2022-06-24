@@ -2,7 +2,7 @@ import $ from './lib/jquery.esm.js';
 
 $.ajax({
   type: "get",
-  url: "../../interface/getitems.php",
+  url: "http://localhost/liu/www.tmall.com/interface/getitems.php",
   dataType: "json"
 }).then(res => {
   // console.log(res);
@@ -12,7 +12,7 @@ $.ajax({
     let pic = JSON.parse(el.picture);
     console.log(pic);
     template += `
-    <a href="">
+    <a href="http://localhost/liu/www.tmall.com/src/detail.html?id=${el.id}">
     <img src="./${pic[0].src}" alt="">
     <div>${el.title}</div>
     <span>￥${el.price}</span>

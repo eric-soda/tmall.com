@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./styles/detail-icon/iconfont.css">
   <link rel="stylesheet" href="./css/detail page/detail.css">
-
+  <script src="./js/detail.js" type="module"></script>
 </head>
 
 <body>
@@ -161,14 +161,8 @@
         <div class="tb_property">
           <div class="tb_wrapper">
             <div class="tb_detail-hd">
-              <div class="fromname">
-                <img src="./img/detail_img/JP.png" alt="">
-                &nbsp;"日本品牌 菜鸟宁波保税7号仓发货"
-              </div>
-              <h1>
-                日本进口SK-II/sk2神仙水护肤精华露230ml水油平衡保湿爽肤水skii
-              </h1>
-              <p class="newp">改写肌肤命运的神仙水 此商品非清莹露</p>
+
+
               <dl class="focus_banner">
                 <dd>
                   <div class="logopic">
@@ -178,23 +172,6 @@
                 </dd>
               </dl>
               <div class="tm_panel">
-                <dl class="tm_pirce-panel">
-                  <dt class="tb_metatit">
-                    价格
-                  </dt>
-                  <dd>
-                    <em tm_ten>￥</em>
-                    <span class="tb_pirce">1860.00</span>
-                  </dd>
-                </dl>
-                <dl class="tm_promo-panel">
-                  <dt class="tb_promo">618狂欢</dt>
-                  <dd>
-                    <em class="tm-yen">¥</em>
-                    <span class="tm-price">1199.00</span>
-                    <em class="tm-promo-type "><s></s>狂欢价</em>
-                  </dd>
-                </dl>
                 <dl class="tm_shop-promotion">
                   <div>
                     <dt class="tb-metatit">本店活动</dt>
@@ -219,19 +196,17 @@
                       <span id="J_AddrSelectTrigger" class="mui_addr_tri" combo-level="3">
                         <span role="button" class="mui_addr_tri_1">杭州<i class="iconfont icon-xiajiantou"></i>
                         </span>
-                        <span role="button" class="mui_addr_tri_2">上城区<i class="iconfont icon-xiajiantou"></i>
-                        </span>
-                      </span>
-                      <div class="tb-postAge-info">
-                        <p>
-                          <span>
-                            满88(20Kg内)包邮
-                          </span>
-                          <a href="//service.tmall.com/support/tmall/knowledge-1137790.htm" target="_blank">
-                            配送规则
-                          </a>
-                        </p>
-                      </div>
+                        <span role="button" class="mui_addr_tri_2">上城区<i class="iconfont icon-xiajiantou"></i> </span>
+                        <div class="tb-postAge-info">
+                          <p>
+                            <span>
+                              满88(20Kg内)包邮
+                            </span>
+                            <a href="//service.tmall.com/support/tmall/knowledge-1137790.htm" target="_blank">
+                              配送规则
+                            </a>
+                          </p>
+                        </div>
                     </div>
                   </dd>
                 </dl>
@@ -255,7 +230,7 @@
                 <dt class="tb-metatit">数量</dt>
                 <dd>
                   <span class="tb-amount-widget mui-amount-wrap">
-                    <input type="text" class="tb-text mui-amount-input" value="1" maxlength="8" title="请输入购买量">
+                    <input type="text" id="num" class="tb-text mui-amount-input" value="1" min="1" max="99" title="请输入购买量">
                     <span class="mui-amount-btn">
                       <span class="iconfont icon-xiangshangjiantou"></span>
                       <span class="iconfont icon-xiajiantou"></span>
@@ -268,11 +243,14 @@
               </dl>
               <div class="tb-action tm-clear">
                 <div class="tb-btn-add ">
-                  <a href="#" rel="nofollow" id="J_LinkAdd" role="button">
+                  <a href="#" role="button">
                     加入购物车
                   </a>
                 </div>
               </div>
+            </div>
+            <div class="picture">
+
             </div>
           </div>
         </div>
@@ -289,7 +267,7 @@
             <a tabindex="-1" href="#J_chaoshiService">售后服务</a></li>
         </ul>
       </div>
-      <div id="attributes" class="attributes">
+      <!-- <div id="attributes" class="attributes">
         <div class="attributes-list" id="J_AttrList">
           <div class="tm-clear tm_brandAttr">
             <div class="name">品牌名称：<b class="J_EbrandLogo" target="_blank"
@@ -311,13 +289,13 @@
             <li title="&nbsp;23区">保质期:&nbsp;3年&nbsp;</li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div class="img_box">
-        <img src="./img/detail_img/text-1.gif" alt="">
+        <!-- <img src='./img/detail_img/text-1.gif' alt="">
         <img src="./img/detail_img/text-2.gif" alt="">
         <img src="./img/detail_img/text-3.jpg" alt="">
         <img src="./img/detail_img/text-4.jpg" alt="">
-        <img src="./img/detail_img/text-5.gif" alt="">
+        <img src="./img/detail_img/text-5.gif" alt=""> -->
       </div>
     </div>
   </div>
