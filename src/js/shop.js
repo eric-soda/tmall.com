@@ -22,7 +22,7 @@ $.ajax({
     let current = shop.filter(elm => elm.id === el.id);
 
     template += `  <div class="shop_product">
-    <input type="checkbox" id-data=${el.id}>
+    <input type="checkbox" id-data=${el.id} class="check">
     <div class="product_img">
       <a href=""> <img src="./${pic[0].src}" alt=""></a>
     </div>
@@ -31,7 +31,7 @@ $.ajax({
     </div>
     <div class="product_message">
       <div class="product_price" >
-        <h3 class="price">￥${(+el.price).toFixed(2)}</h3>
+        ￥${(+el.price).toFixed(2)}
       </div>
       <div class="product_amount">
         <a href="#" class="reduce" id-date=${el.id}>-</a>
@@ -88,11 +88,6 @@ $.ajax({
   allCheck.on('click', function () {
     item.prop('checked', $(this).prop('checked'));
     allCheck.prop('checked', $(this).prop('checked'));
-    let money = 0;
-    $('.product_prices').each(function(i,el){
-      money += parseFloat($(el).text().substr(1));
-    });
-    $('#total').text('￥' + money.toFixed(2));
 
   });
 
@@ -107,7 +102,55 @@ $.ajax({
     let elm = Array.from(item);
     return elm.every((el) => $(el).prop('checked'));
   }
- 
+
+  // // 计算总价----------------------------------
+  let pricearr = [];
+  let numarr = [];
+  $('.check').on({
+    change() {
+      console.log($(this));
+      let prices = +$(this).parent().find('.product_prices').html().replace(/[￥]/g, "");
+      let num = +$(this).parent().find('.text').val();
+     
+     
+      // 判断是否选中
+      if (this.checked) {
+        // 选中的放入数组
+        pricearr.push(prices);
+        numarr.push(num);
+      } else {
+        // 没选中的从数组中删除
+        let priceres = pricearr.filter(el => {
+          return el !== prices;
+        });
+        let numres = pricearr.filter(el => {
+          return el !== prices;
+        });
+        pricearr = priceres;
+        numarr = numres;
+      }
+      // console.log(arr);
+      // 判断数组是否为空
+      if (pricearr) {
+        // 数组不为空的遍历之后加总
+        let allprice = 0;
+        let allnum = 0;
+        pricearr.forEach(el => {
+          allprice += el;
+        });
+        numarr.forEach(el => {
+          allnum += el;
+        });
+        // 添加到页面
+        $('#total').html(allprice);
+        $('.product_select>em').html(allnum);
+        $('#total').html(allprice);
+      }
+    }
+  })
+
+
+
 
 }).catch(xhr => {
   console.log(xhr.status);

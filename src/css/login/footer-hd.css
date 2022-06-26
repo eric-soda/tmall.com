@@ -1,0 +1,28 @@
+.footer-hd {
+  width: 100%;
+  height: 36px;
+  box-sizing: border-box;
+}
+.footer-hd p {
+  display: block;
+  height: 36px;
+  box-sizing: border-box;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  line-height: 27px;
+  border-bottom: 1px solid #ddd;
+}
+.footer-hd p a {
+  color: #6c6c6c;
+  font-size: 12px;
+  line-height: 27px;
+  margin: 0 4px;
+}
+.footer-hd p a:hover {
+  color: red;
+}
+.footer-hd p b {
+  margin: 0 3px;
+  color: #ddd;
+  line-height: 27px;
+}
