@@ -88,7 +88,7 @@ $.ajax({
   allCheck.on('click', function () {
     item.prop('checked', $(this).prop('checked'));
     allCheck.prop('checked', $(this).prop('checked'));
-
+    $('.check').trigger('change');
   });
 
   item.on('click', function () {
@@ -111,8 +111,8 @@ $.ajax({
       console.log($(this));
       let prices = +$(this).parent().find('.product_prices').html().replace(/[￥]/g, "");
       let num = +$(this).parent().find('.text').val();
-     
-     
+
+
       // 判断是否选中
       if (this.checked) {
         // 选中的放入数组
