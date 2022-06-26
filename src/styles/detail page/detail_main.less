@@ -420,6 +420,24 @@
 
             }
           }
+
+          .picture {
+            width: 418px;
+            height: 418px;
+            border: 1px solid rgba(0, 0, 0, .05);
+            margin-top: 20px;
+            position: relative;
+           position: absolute;
+           left: 0;
+           top: 0;
+            >img{
+              width: 418px;
+              height: 418px;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
         }
       }
     }
@@ -429,7 +447,8 @@
     width: 790px;
     margin: 0 auto;
     overflow: visible;
-  #TabBarBox {
+
+    #TabBarBox {
       width: 788px;
       border: 1px solid #dfdfdf;
       z-index: 9999;
@@ -440,6 +459,7 @@
         height: 48px;
         background-color: #fff;
         font-size: 12px;
+
         .tm-selected {
           position: relative;
           border-top: 2px solid #FF0036;
@@ -447,7 +467,8 @@
           margin: -1px 0 0 -1px;
           z-index: 1;
           padding: 0;
-          >a{
+
+          >a {
             font-weight: 700;
             display: block;
             height: 100%;
@@ -465,16 +486,18 @@
           line-height: 48px;
           display: block;
           cursor: pointer;
-          a{
+
+          a {
             border-right: 1px dotted #d2d2d2;
             color: #333;
             padding: 0 20px;
           }
+        }
       }
     }
+
   }
-   
-  }
+
   #attributes {
     font-size: 12px;
 
@@ -505,7 +528,7 @@
 
       }
 
-    
+
       .subAttrList {
         padding: 0 20px 18px;
         text-indent: 0;
@@ -527,13 +550,15 @@
         }
       }
     }
-  } 
-  .img_box{
+  }
+
+  .img_box {
     margin-top: 20px;
     margin-bottom: 150px;
-    img{
+
+    img {
       width: 790px;
     }
   }
-  
+
 }

@@ -10,19 +10,21 @@
 <link rel="stylesheet" href="./styles/font_3468592_m8gn10kim4/iconfont.css">
 <link rel="stylesheet" href="./css/reset.css">
 <link rel="stylesheet" href="./css/index/index.css">
+<link rel="stylesheet" href="./js/swiper-7.4.1/swiper/swiper-bundle.min.css">
 <script src="./js/index.js" type="module"></script>
+
 <body>
   <div id="backgroud">
     <header>
       <div id="contenier">
         <div class="back_home">
           <div class="iconfont icon-shouye"></div>
-          <a href="" class="tmall_index">天猫首页</a>
+          <a href="" class="http://localhost/liu/www.tmall.com/src/index.html">天猫首页</a>
         </div>
         <div id="login_info1">
           <em class="text">喵，欢迎来天猫</em>
-          <a href="" class="login">请登录</a>
-          <a href="" class="reg">免费注册</a>
+          <a href="http://localhost/liu/www.tmall.com/src/login.html" class="login">请登录</a>
+          <a href="http://localhost/liu/www.tmall.com/src/reg.html" class="reg">免费注册</a>
         </div>
         <ul id="quick_menu">
           <li class="menu_item-mytaobao">
@@ -39,7 +41,7 @@
           </li>
           <li class="">
             <div class="iconfont icon-gouwuchekong"></div>
-            <a href="">购物车</a>
+            <a href="http://localhost/liu/www.tmall.com/src/shopCart.html">购物车</a>
           </li>
           <li class="menu_item-collect">
             <div class="menu2">
@@ -248,11 +250,54 @@
           </div>
         </div>
         <div class="text_slideshow">
-          <div class="top_slideshow">
-
+          <div class="top">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/index_img/swiper1.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/index_img/swiper2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/index_img/swiper3.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/index_img/swiper4.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
-          <div class="bottom_slideshow">
-
+          <div class="bottom">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/index_img/sw1.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/index_img/sw2.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/index_img/sw3.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/index_img/sw4.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/index_img/sw5.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/index_img/sw6.webp" alt="">
+                </div>
+               
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
         <div class="text_vipcontent">
@@ -376,7 +421,7 @@
             <span>￥29.9</span>
           </a> -->
         </div>
-      
+
       </div>
       <div id="main_internet">
         <div>
@@ -761,3 +806,7 @@
 </body>
 
 </html>
+<script src="./js/swiper-7.4.1/swiper/swiper-bundle.min.js"></script>
+<script src="./js/swiper1.js"></script>
+<script src="./js/swiper2.js"></script>
+

@@ -684,6 +684,23 @@ header #contenier #quick_menu .menu_ietm-phone .menu_mobile {
   text-align: center;
   font-size: 16px;
 }
+#detail_main .main_meta .tm_clear .tb_property .tb_wrapper .picture {
+  width: 418px;
+  height: 418px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#detail_main .main_meta .tm_clear .tb_property .tb_wrapper .picture > img {
+  width: 418px;
+  height: 418px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 #detail_main .main_content {
   width: 790px;
   margin: 0 auto;
