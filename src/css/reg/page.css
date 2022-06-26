@@ -1,0 +1,25 @@
+.page {
+  height: 83px;
+  box-sizing: border-box;
+}
+.page .logo {
+  height: 43px;
+  padding: 20px 0;
+  display: flex;
+}
+.page .logo .logo-img {
+  margin-left: 0;
+}
+.page .logo .logo-img a img {
+  width: 106px;
+  height: 43px;
+}
+.page .logo div {
+  margin-left: 7px;
+}
+.page .logo div h2 {
+  font-size: 22px;
+  line-height: 43px;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "\534E\6587\7EC6\9ED1", "\9ED1\4F53", arial;
+  color: #3c3c3c;
+}
