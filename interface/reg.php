@@ -24,7 +24,7 @@
   }
 
   // 插入数据
-  $insertUser = "insert into users (username,password,email,phone,address,sex) values ('$username','$password','1','1','1','1')";
+  $insertUser = "insert into user (username,password,email,phone,address,sex) values ('$username','$password','1','1','1','1')";
 
   $inserted = $conn->query($insertUser);
 
